@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendar {
+    text-align: center;
+    box-shadow: rgba(84, 134, 227, 0.4) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.header>button{
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid #35a6f1 ;
+    background-color: white;
+    cursor: pointer;
+    color: #35a6f1;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-table th, .calendar-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #35a6f1;
+    color: #fff;
+}
+
+.selected-dates {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
